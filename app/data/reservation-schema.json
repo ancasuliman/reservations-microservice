@@ -1,0 +1,37 @@
+{
+    "title": "Reservation",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type":"string"
+        },
+        "start_date": {
+            "description": "Start date of reservation",
+            "type": "string",
+            "format": "date"
+        },
+        "end_date": {
+            "description": "End date of reservation",
+            "type": "string",
+            "format": "date"
+        },
+        "resource_id": {
+            "description": "ID of the required resource",
+            "type": "string"
+        },
+        "owner_email": {
+            "type": "string",
+            "format": "email"
+        },
+        "comments": {
+            "type": "string",
+            "maxLength": 600
+        }
+    },
+    "required": [
+        "start_date",
+        "end_date",
+        "resource_id",
+        "owner_email"
+    ]
+}

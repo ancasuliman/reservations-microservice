@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Resources
+( 
+    resource_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    resource_name TEXT NOT NULL
+);
